@@ -6,4 +6,4 @@ Constituted by a class that abstracts the USB-UART converter outputs to outputs 
 
 Tested with adapters based on CH340G (advertized as Adapter USB-UART CH340 for the WiFi ESP-01 ESP8266 module), FT232RL and CP2101N. The adapter based on CH340G requires some wiring to use the IC outputs).
 
-There is a [short video](https://youtu.be/XAwQqPPlS3w) that shows the code in action
+There is a [short video](https://youtu.be/XAwQqPPlS3w) that shows the code in action. In this video, the adapter based on CH340G, with the required changes to work for this application.
