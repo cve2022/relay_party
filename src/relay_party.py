@@ -1,11 +1,7 @@
 #! /usr/bin/env python3
 
-from relays import Relays, RELAY1, RELAY2, RELAY3, ON, OFF
+from relays import Relays, ON, OFF
 import time
-
-RED   = RELAY1
-GREEN = RELAY2
-BLUE  = RELAY3
 
 PATTERN1 = (
     (ON,  OFF, OFF),
@@ -25,7 +21,7 @@ while True:
         for i in range(4):
             for p in patt:
                 print (p)
-                r.relay(RED,   p[0])
-                r.relay(GREEN, p[1])
-                r.relay(BLUE,  p[2])
+                r.relay1(p[0]) # red
+                r.relay2(p[1]) # green
+                r.relay3(p[2]) # blue
                 time.sleep(1)
